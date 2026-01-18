@@ -9,8 +9,8 @@
 </head>
 <body>
     <header class="bg-[#1A0B2E] p-[20px] max-w-[1600px] md:py-8">
-        <nav class="flex justify-between items-center max-w-[400px] mx-auto md:max-w-[1200px]">
-            <h1 class="text-3xl md:text-5xl font-bold"><span class="text-[#FFFFFF]">Tech</span><span class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span></h1>
+        <nav class="flex justify-between items-center md:flex-col md:gap-6 lg:flex-row max-w-[400px] mx-auto md:max-w-650px lg:max-w-[1200px]">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold"><span class="text-[#FFFFFF]">Tech</span><span class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span></h1>
             
             <ul class=" hidden md:flex items-center gap-10 text-[#FFFFFF] max-w-[218px]">
                 <li>About</li>
@@ -23,5 +23,23 @@
             <p class="text-amber-50 md:hidden"><i class="fa-solid fa-bars"></i></p>
         </nav>
     </header>
+    <main>
+        <section class="bg-[url(assets/hero-bg.png)] w-full bg-cover bg-no-repeat bg-center border-2 border-t-gray-800 lg:py-[101px] lg:pt-[40px] md:py-[60px] md:pt-[10px]">
+            <div class="max-w-[400px] lg:max-w-[550px] mx-auto text-center pt-10">
+                <div class="relative mx-auto w-[180px] lg:w-[350px] lg:h-[350px] h-[220px] md:w-[250px] md:h-[250px] bg-[url(assets/hero-circle.png)] max-w-[200px] lg:max-w-[350px] lg:max-h-[350px] max-h-[200px] w-full bg-cover bg-no-repeat bg-cente flex items-center justify-center shadow-lg">
+                <img class="w-[60px] md:w-[80px] lg:w-[100px]" src="assets/microphone.png" alt="Microphone">
+                <span class="absolute top-4 right-0 bg-[#00FF88] text-[#1A0B2E] text-xs font-bold px-3 py-1
+                lg:px-4 lg:py-1.5 lg:text-base rounded-full shadow-md">NEW</span>
+            </div>
+                <div class="mt-8 lg:mt-10">
+                    <h1 class=" text-4xl md:text-5xl font-semibold lg:font-bold lg:text-6xl text-[#FFFFFF] mb-2 lg:mb-3">TechWave</h1>
+                    <p class="text-base text-[#FFFFFF] mb-6">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+
+                    <button class="text-base text-[#FFFFFF] text-base lg:text-xl font-semibold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] py-3 px-5 rounded-full"><i class="fa-brands fa-spotify"></i> Listen on Spotify</button>
+                    <button class="text-base lg:text-xl lg: lg:font-semibold text-[#00FF88] py-[13px] px-[20px] border border-[#00FF88] rounded-[10000px]"><i class="fa-solid fa-envelope"></i> Subscribe</button>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
