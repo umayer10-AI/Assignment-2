@@ -13,14 +13,14 @@
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold"><span class="text-[#FFFFFF]">Tech</span><span class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span></h1>
             
             <ul class=" hidden md:flex items-center gap-10 text-[#FFFFFF] max-w-[218px]">
-                <li>About</li>
-                <li>Episodes</li>
-                <li>Host</li>
+                <li class=" cursor-pointer hover:text-green-300">About</li>
+                <li class=" cursor-pointer hover:text-green-300">Episodes</li>
+                <li class=" cursor-pointer hover:text-green-300">Host</li>
             </ul>
             <div class="hidden md:flex">
-                <button class="text-[#FFFFFF] text-base font-semibold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] py-3 px-5 rounded-full">Subscribe <i class="fa-solid fa-arrow-right-long"></i></button>
+                <button class="text-[#FFFFFF] text-base font-semibold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] py-3 px-5 rounded-full cursor-pointer hover:brightness-110">Subscribe <i class="fa-solid fa-arrow-right-long"></i></button>
             </div>
-            <p class="text-amber-50 md:hidden"><i class="fa-solid fa-bars"></i></p>
+            <p class="text-amber-50 md:hidden cursor-pointer hover:bg-green-300"><i class="fa-solid fa-bars"></i></p>
         </nav>
     </header>
     <main>
@@ -30,14 +30,14 @@
                 <div class="relative mx-auto w-[180px] lg:w-[350px] lg:h-[350px] h-[220px] md:w-[250px] md:h-[250px] bg-[url(assets/hero-circle.png)] max-w-[200px] lg:max-w-[350px] lg:max-h-[350px] max-h-[200px] w-full bg-cover bg-no-repeat bg-cente flex items-center justify-center shadow-lg">
                 <img class="w-[60px] md:w-[80px] lg:w-[100px]" src="assets/microphone.png" alt="Microphone">
                 <span class="absolute top-4 right-0 bg-[#00FF88] text-[#1A0B2E] text-xs font-bold px-3 py-1
-                lg:px-4 lg:py-1.5 lg:text-base rounded-full shadow-md">NEW</span>
+                lg:px-4 lg:py-1.5 lg:text-base rounded-full shadow-md cursor-pointer hover:bg-cyan-400 hover:text-black">NEW</span>
             </div>
                 <div class="mt-8 lg:mt-10">
                     <h1 class=" text-4xl md:text-5xl font-bold lg:text-6xl text-[#FFFFFF] mb-2 lg:mb-3">TechWave</h1>
                     <p class="text-base text-[#FFFFFF] mb-6">Your daily dose of tech insights, productivity hacks, and personal growth</p>
 
-                    <button class="text-base text-[#FFFFFF] text-base lg:text-xl font-semibold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] py-3 px-5 rounded-full"><i class="fa-brands fa-spotify"></i> Listen on Spotify</button>
-                    <button class="text-base lg:text-xl lg: lg:font-semibold text-[#00FF88] py-[13px] px-[20px] border border-[#00FF88] rounded-[10000px]"><i class="fa-solid fa-envelope"></i> Subscribe</button>
+                    <button class="text-base text-[#FFFFFF] text-base lg:text-xl font-semibold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] py-3 px-5 rounded-full cursor-pointer hover:brightness-110"><i class="fa-brands fa-spotify"></i> Listen on Spotify</button>
+                    <button class="text-base lg:text-xl lg: lg:font-semibold text-[#00FF88] py-[13px] px-[20px] border border-[#00FF88] rounded-[10000px] cursor-pointer hover:bg-cyan-400 hover:text-black"><i class="fa-solid fa-envelope"></i> Subscribe</button>
                 </div>
             </div>
         </section>
@@ -72,27 +72,27 @@
             <div class="max-w-[380px] md:max-w-[680px] lg:max-w-[880px] xl:lg:max-w-[1200px] mx-auto py-10 lg:pb-[90px] xl:pb-[120px]">
                 <h1 class="text-[32px] md:text-[35px] text-[#FFFFFF] font-bold text-center mb-6 lg:mb-8">Why Choose TechWave</h1>
             <div class="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6">
-                <div class="p-[24px] xl:px-[35px] bg-[#2a0954] mb-4 rounded-3xl xl:grid xl:row-start-1 xl:row-span-2 xl:py-[100px]">
+                <div class="p-[24px] xl:px-[35px] bg-[#2a0954] mb-4 rounded-3xl xl:grid xl:row-start-1 xl:row-span-2 xl:py-[100px] cursor-pointer hover:bg-green-400">
                     <img class="mb-5" src="assets/headphone.png" alt="">
                     <h2 class="text-[#FFFFFF] text-xl mb-4 font-bold">Premium Audio Quality</h2>
                     <p class="text-[#FFFFFF] text-base">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
                 </div>
-                <div class="p-[24px] xl:p-[35px] bg-[#2a0954] mb-4 rounded-3xl xl:grid xl:row-start-1 xl:col-start-2 xl:col-span-2">
+                <div class="p-[24px] xl:p-[35px] bg-[#2a0954] mb-4 rounded-3xl xl:grid xl:row-start-1 xl:col-start-2 xl:col-span-2 cursor-pointer hover:bg-green-400">
                     <img class="mb-5" src="assets/device.png" alt="">
                     <h2 class="text-[#FFFFFF] text-xl mb-4 font-bold">Mobile Friendly</h2>
                     <p class="text-[#FFFFFF] text-base">Listen on the go with seamless mobile experience and offline downloads.</p>
                 </div>
-                <div class="p-[24px] xl:p-[35px] bg-[#2a0954] mb-4 rounded-3xl xl:grid xl:row-start-2 xl:col-start-2 xl:col-span-2">
+                <div class="p-[24px] xl:p-[35px] bg-[#2a0954] mb-4 rounded-3xl xl:grid xl:row-start-2 xl:col-start-2 xl:col-span-2 cursor-pointer hover:bg-green-400">
                     <img class="mb-5" src="assets/location.png" alt="">
                     <h2 class="text-[#FFFFFF] text-xl mb-4 font-bold">Global Community</h2>
                     <p class="text-[#FFFFFF] text-base">Connect with tech enthusiasts from over 120 countries worldwide.</p>
                 </div>
-                <div class="p-[24px] xl:p-[35px] bg-[#2a0954] mb-4 rounded-3xl xl:grid xl:row-start-3 xl:col-start-1 xl:col-span-2">
+                <div class="p-[24px] xl:p-[35px] bg-[#2a0954] mb-4 rounded-3xl xl:grid xl:row-start-3 xl:col-start-1 xl:col-span-2 cursor-pointer hover:bg-green-400">
                     <img class="mb-5" src="assets/Icon (Stroke).png" alt="">
                     <h2 class="text-[#FFFFFF] text-xl mb-4 font-bold">Exclusive Interviews</h2>
                     <p class="text-[#FFFFFF] text-base">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
                 </div>
-                <div class="p-[24px] xl:p-[35px] bg-[#2a0954] xl:h-fit rounded-3xl">
+                <div class="p-[24px] xl:p-[35px] bg-[#2a0954] xl:h-fit rounded-3xl cursor-pointer hover:bg-green-400">
                     <img class="mb-5" src="assets/resource.png" alt="">
                     <h2 class="text-[#FFFFFF] text-xl mb-4 font-bold">Rich Resources</h2>
                     <p class="text-[#FFFFFF] text-base">Access show notes, transcripts, and additional learning materials for every episode.</p>
@@ -104,7 +104,7 @@
             <div class="max-w-[380px] md:max-w-[500px] lg:max-w-[800px] xl:max-w-[1200px] mx-auto box-border pb-15 pt-10 xl:pt-[100px] xl:pb-[100px]">
                 <h1 class="text-[32px] md:text-4xl lg:text-5xl text-[#FFFFFF] text-center font-bold mb-6 md:mb-10 lg:mb-12">Featured Episodes</h1>
                 <div class="lg:grid lg:grid-cols-2 lg:gap-7 xl:grid-cols-3 xl:gap-5">
-                    <div class="max-w-[380px] md:max-w-[500px] lg:max-w-[380px] bg-[#2a0954] rounded-3xl mb-6 overflow-hidden">
+                    <div class="max-w-[380px] md:max-w-[500px] lg:max-w-[380px] bg-[#2a0954] rounded-3xl mb-6 overflow-hidden cursor-pointer hover:bg-pink-600">
                         <iframe class="max-w-[380px] md:mx-auto md:max-w-[500px] lg:max-w-[380px] lg:max-w-[380px]" width="560" height="315" src="https://www.youtube.com/embed/vBBBqHwH078?si=_IolYEeZZlKnl8OX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <div class="p-4">
                             <h3 class="text-xl font-bold text-[#FFFFFF] mb-2">The Future of AI in Everyday Life</h3>
@@ -112,7 +112,7 @@
                             <p class="text-[#00FF88] font-semibold"><i class="fa-solid fa-clock"></i>  42 min</p>
                         </div>
                     </div>
-                    <div class="max-w-[380px] md:max-w-[500px] lg:max-w-[380px] bg-[#2a0954] rounded-3xl mb-6 overflow-hidden">
+                    <div class="max-w-[380px] md:max-w-[500px] lg:max-w-[380px] bg-[#2a0954] rounded-3xl mb-6 overflow-hidden cursor-pointer hover:bg-pink-600">
                         <iframe class="max-w-[380px] md:mx-auto md:max-w-[500px] lg:max-w-[380px]" width="560" height="315" src="https://www.youtube.com/embed/H5zSQ9M_s2Y?si=_nd8kmQ8yZV7MrlF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <div class="p-4">
                             <h3 class="text-xl font-bold text-[#FFFFFF] mb-2">The Future of AI in Everyday Life</h3>
@@ -120,7 +120,7 @@
                             <p class="text-[#00FF88] font-semibold"><i class="fa-solid fa-clock"></i>  35 min</p>
                         </div>
                     </div>
-                    <div class="max-w-[380px] md:max-w-[500px] lg:max-w-[380px] bg-[#2a0954] rounded-3xl overflow-hidden xl:h-fit">
+                    <div class="max-w-[380px] md:max-w-[500px] lg:max-w-[380px] bg-[#2a0954] rounded-3xl overflow-hidden xl:h-fit cursor-pointer hover:bg-pink-600">
                         <iframe class="max-w-[380px] md:mx-auto md:max-w-[500px] lg:max-w-[380px]" width="560" height="315" src="https://www.youtube.com/embed/2SXCR-43RjM?si=6eDJ5E4ZbbDbPVfm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <div class="p-4">
                             <h3 class="text-xl font-bold text-[#FFFFFF] mb-2">The Future of AI in Everyday Life</h3>
@@ -134,7 +134,7 @@
         <section class="bg-[#1A0B2E]">
             <div class="max-w-[380px] md:max-w-[550px] lg:max-w-[800px] xl:max-w-[1200px] mx-auto pb-10 lg:pb-[60px] xl:pb-[90px]">
                 <h1 class="text-[32px] xl:text-[48px] xl:mb-8 font-bold text-[#FFFFFF] text-center mb-6">Meet the Host</h1>
-                <div class="p-6 bg-[#2a0954] rounded-3xl lg:flex lg:items-center lg:gap-7 xl:px-10 xl:pt-10">
+                <div class="p-6 bg-[#2a0954] rounded-3xl lg:flex lg:items-center lg:gap-7 xl:px-10 xl:pt-10 cursor-pointer hover:bg-cyan-600">
                     <div class="mb-4">
                         <img class="max-w-[150px] lg:max-w-[180px] xl:max-w-[200px] mx-auto" src="assets/host.png" alt="">
                     </div>
@@ -152,5 +152,19 @@
             </div>
         </section>
     </main>
+    <footer class="bg-[url(assets/footer-bg.png)] w-full bg-cover bg-no-repeat bg-center">
+        <div class="max-w-[380px] md:max-w-[400px] lg:max-w-[500px] xl:max-w-[544px] mx-auto py-[30px] xl:py-[100px]">
+            <h1 class="text-4xl lg:text-5xl xl:text-7xl font-bold text-center"><span class="text-[#FFFFFF]">Tech</span><span class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span></h1>
+            <div class="max-w-[255px] md:max-w-[350px] lg:max-w-[400px] xl:max-w-[544px] mx-auto mt-6 mb-6 xl:mb-10">
+                <ul class="text-[#FFFFFF] flex justify-center xl:justify-between gap-3 flex-wrap text-center">
+                    <li class=" cursor-pointer hover:text-green-300"><i class="fa-brands fa-spotify"></i> Spotify</li>
+                    <li class=" cursor-pointer hover:text-green-300"><i class="fa-solid fa-podcast"></i> Apple Podcasts</li>
+                    <li class=" cursor-pointer hover:text-green-300"><i class="fa-brands fa-youtube"></i> YouTube</li>
+                    <li class=" cursor-pointer hover:text-green-300"><i class="fa-brands fa-twitter"></i> Twitter</li>
+                </ul>
+            </div>
+            <p class="text-[#FAFAFA] text-base text-center">&copy;© 2026 TechWave Podcast. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
