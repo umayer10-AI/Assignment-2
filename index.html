@@ -6,11 +6,43 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>TechWave</title>
+    <style>
+        @keyframes waveGradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .animate-wave {
+            animation: waveGradient 4s ease-in-out infinite;
+        }
+        
+        @keyframes newBadge {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.15);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .animate-new {
+            animation: newBadge 2s ease-in-out infinite;
+        }
+    </style>
 </head>
 <body>
     <header class="bg-[#1A0B2E] p-[20px] max-w-[1600px] md:py-8">
         <nav class="flex justify-between items-center md:flex-col md:gap-6 lg:flex-row max-w-[400px] mx-auto md:max-w-650px lg:max-w-[1200px]">
-            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold"><span class="text-[#FFFFFF]">Tech</span><span class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span></h1>
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold"><span class="text-[#FFFFFF]">Tech</span><span class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent bg-[length:200%_200%] animate-wave">Wave</span></h1>
             
             <ul class=" hidden md:flex items-center gap-10 text-[#FFFFFF] max-w-[218px]">
                 <li class=" cursor-pointer hover:text-green-300">About</li>
@@ -18,7 +50,8 @@
                 <li class=" cursor-pointer hover:text-green-300">Host</li>
             </ul>
             <div class="hidden md:flex">
-                <button class="text-[#FFFFFF] text-base font-semibold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] py-3 px-5 rounded-full cursor-pointer hover:brightness-110">Subscribe <i class="fa-solid fa-arrow-right-long"></i></button>
+                <button class="text-[#FFFFFF] text-base font-semibold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] py-3 px-5 rounded-full cursor-pointer hover:brightness-110 bg-[length:200%_200%]
+    animate-wave">Subscribe <i class="fa-solid fa-arrow-right-long"></i></button>
             </div>
             <p class="text-amber-50 md:hidden cursor-pointer hover:bg-green-300"><i class="fa-solid fa-bars"></i></p>
         </nav>
@@ -30,13 +63,13 @@
                 <div class="relative mx-auto w-[180px] lg:w-[350px] lg:h-[350px] h-[220px] md:w-[250px] md:h-[250px] bg-[url(assets/hero-circle.png)] max-w-[200px] lg:max-w-[350px] lg:max-h-[350px] max-h-[200px] w-full bg-cover bg-no-repeat bg-cente flex items-center justify-center shadow-lg">
                 <img class="w-[60px] md:w-[80px] lg:w-[100px]" src="assets/microphone.png" alt="Microphone">
                 <span class="absolute top-4 right-0 lg:right-6 xl:right-6 bg-[#00FF88] text-[#1A0B2E] text-xs font-bold px-3 py-1
-                lg:px-4 lg:py-1.5 lg:text-base rounded-full shadow-md cursor-pointer hover:bg-cyan-400 hover:text-black">NEW</span>
+                lg:px-4 lg:py-1.5 lg:text-base rounded-full shadow-md cursor-pointer hover:bg-cyan-400 hover:text-black animate-new">NEW</span>
             </div>
                 <div class="mt-8 lg:mt-10 xl:pt-0">
                     <h1 class=" text-4xl md:text-5xl font-bold lg:text-6xl text-[#FFFFFF] mb-2 lg:mb-3">TechWave</h1>
                     <p class="text-base text-[#FFFFFF] mb-6">Your daily dose of tech insights, productivity hacks, and personal growth</p>
 
-                    <button class="text-base text-[#FFFFFF] text-base lg:text-xl font-semibold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] py-3 px-5 rounded-full cursor-pointer hover:brightness-110"><i class="fa-brands fa-spotify"></i> Listen on Spotify</button>
+                    <button class="text-base text-[#FFFFFF] text-base lg:text-xl font-semibold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] py-3 px-5 rounded-full cursor-pointer hover:brightness-110 bg-[length:200%_200%] animate-wave"><i class="fa-brands fa-spotify"></i> Listen on Spotify</button>
                     <button class="text-base lg:text-xl lg: lg:font-semibold text-[#00FF88] py-[13px] px-[20px] border border-[#00FF88] rounded-[10000px] cursor-pointer hover:bg-cyan-400 hover:text-black"><i class="fa-solid fa-envelope"></i> Subscribe</button>
                 </div>
             </div>
@@ -154,7 +187,7 @@
     </main>
     <footer class="bg-[url(assets/footer-bg.png)] w-full bg-cover bg-no-repeat bg-center">
         <div class="max-w-[380px] md:max-w-[400px] lg:max-w-[500px] xl:max-w-[544px] mx-auto py-[30px] xl:py-[100px]">
-            <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold text-center"><span class="text-[#FFFFFF]">Tech</span><span class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span></h1>
+            <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold text-center"><span class="text-[#FFFFFF]">Tech</span><span class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent bg-[length:200%_200%] animate-wave">Wave</span></h1>
             <div class="max-w-[255px] md:max-w-[350px] lg:max-w-[400px] xl:max-w-[544px] mx-auto mt-6 mb-6 xl:mb-10">
                 <ul class="text-[#FFFFFF] flex justify-center xl:justify-between gap-3 flex-wrap text-center">
                     <li class=" cursor-pointer hover:text-green-300"><i class="fa-brands fa-spotify"></i> Spotify</li>
